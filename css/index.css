@@ -137,6 +137,12 @@ header .logo {
     justify-content: flex-end;
 }
 
+@media (max-width: 500px) {
+    .cta {
+        margin: auto;
+    }
+}
+
 .cta .cta-text {
     font-size: 72px;
     text-align: center;
@@ -146,6 +152,12 @@ header .logo {
     flex-flow: column;
     align-items: center;
     margin: 0 82px 0 0;
+}
+
+@media (max-width: 500) {
+    .cta .cta-text {
+        margin: auto;
+    }
 }
 
 .cta .cta-text button {
@@ -158,9 +170,25 @@ header .logo {
     cursor: pointer;
 }
 
+@media (max-width: 500) {
+    .cta .cta-text button {
+        margin: auto;
+    }
+}
+
 .cta .cta-text button:hover {
     background: black;
     color: white;
+}
+
+.cta img {
+    display: flex;
+}
+
+@media (max-width: 500px) {
+    .cta img {
+        display: none;
+    }
 }
 
 /* Main Content Styles */
