@@ -70,11 +70,24 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+@media(max-width: 800px) {
+    .container {
+        margin: auto;
+    }
+}
+
+
 /* Header Styles */
 
 header {
     width: 100%;
     display: flex;
+}
+
+@media(max-width: 500px) {
+    .header {
+      margin: auto;
+    }
 }
 
 header nav {
@@ -84,9 +97,21 @@ header nav {
     display: flex;
 }
 
+@media(max-width: 500px) {
+    .header nav {
+      margin: auto;
+    }
+}
+
 header nav a {
     text-decoration: none;
     color: #b0b0b0;
+}
+
+@media(max-width: 500px) {
+    .header nav a {
+      margin: auto;
+    }
 }
 
 header nav a:hover {
@@ -96,6 +121,12 @@ header nav a:hover {
 
 header .logo {
     margin: 28px 0 0 91px;
+}
+
+@media(max-width: 500px) {
+    .header logo {
+        margin: auto;
+    } 
 }
 
 /* Call To Action (CTA) Styles */
