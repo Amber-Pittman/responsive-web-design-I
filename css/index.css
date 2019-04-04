@@ -141,7 +141,8 @@ header nav a:last-child {
 
 @media (max-width: 500px) {
     header nav a:last-child {
-        margin-right: 5px;
+        display: flex;
+        justify-content: flex-end;
       }
 }
 
@@ -151,10 +152,21 @@ header .logo {
 
 @media (max-width: 500px) {
     header .logo {
-        margin-top: 15px;
+        display: none;
+      }
+}
+
+header .logo2 {
+    display:none;
+}
+
+@media (max-width: 500px) {
+    header .logo2 {
         display: flex;
         flex-direction: column;
-      }
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* cta */
