@@ -64,7 +64,14 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 72px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 36px;
+        justify-content: space-evenly;
+      }
 }
 
 
@@ -96,15 +103,15 @@ header {
 }
 
 header nav {
-  width: 90%;
+  width: 100%;
   vertical-align: top;
   margin-top: 35px;
 }
 
 @media (max-width: 500px) {
     header nav {
-        width: 90%;
-        margin-top: 35px;
+        width: 100%;
+        margin-top: 25px 5px 0;
         justify-content: space-between;
     }
 }
@@ -164,6 +171,7 @@ header .logo2 {
 
 @media (max-width: 500px) {
     header .logo2 {
+        width: 50%;
         display: flex;
         vertical-align: top;
     }
@@ -342,7 +350,6 @@ ul {
 @media (max-width: 500px) {
     .contact {
         width: 100%;
-        display: flex;
         margin-top: 57px;
         border-top: 1px solid black;
         padding: 39px 10px 0;
