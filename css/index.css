@@ -86,7 +86,7 @@ header {
 
 @media(max-width: 500px) {
     .header {
-      margin: auto;
+      width: 90%;
     }
 }
 
@@ -95,11 +95,13 @@ header nav {
     width: 610px;
     justify-content: space-between;
     display: flex;
+    border: 2px solid deeppink;
 }
 
 @media(max-width: 500px) {
     .header nav {
-      margin: auto;
+      padding: 10px;
+      margin: 40px 10px;
     }
 }
 
@@ -110,7 +112,7 @@ header nav a {
 
 @media(max-width: 500px) {
     .header nav a {
-      margin: auto;
+      margin: 40px auto;
     }
 }
 
@@ -139,7 +141,8 @@ header .logo {
 
 @media (max-width: 500px) {
     .cta {
-        margin: auto;
+        margin-top: 72px;
+        justify-content: center;
     }
 }
 
@@ -172,7 +175,7 @@ header .logo {
 
 @media (max-width: 500) {
     .cta .cta-text button {
-        margin: auto;
+        margin: 10px;
     }
 }
 
@@ -204,6 +207,12 @@ header .logo {
 
 .main-content .top-content {
     display: flex;
+}
+
+@media (max-width: 500px) {
+    .main-content .top-content {
+        display: flex;
+    }
 }
 
 .main-content .middle-img {
