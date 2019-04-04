@@ -75,8 +75,10 @@ h1 {
 }
 
 @media (max-width: 500px) {
-    width: 100%;
-    margin: 0 auto;
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /* header */
@@ -86,7 +88,9 @@ header {
 
 @media (max-width: 500px) {
     header {
-        width: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+        border: 2px solid mediumvioletred;
     }
 }
 
@@ -125,12 +129,32 @@ header nav a:first-child {
   margin-left: 0;
 }
 
+@media (max-width: 500px) {
+    header nav a:first-child {
+        margin-left: 5px;
+    }
+}
+
 header nav a:last-child {
   margin-right: 0;
 }
 
+@media (max-width: 500px) {
+    header nav a:last-child {
+        margin-right: 5px;
+      }
+}
+
 header .logo {
   margin-top: 25px;
+}
+
+@media (max-width: 500px) {
+    header .logo {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+      }
 }
 
 /* cta */
