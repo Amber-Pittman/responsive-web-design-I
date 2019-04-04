@@ -74,15 +74,33 @@ h1 {
   margin: 0 auto;
 }
 
+@media (max-width: 500px) {
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* header */
 header {
   display: flex;
 }
 
+@media (max-width: 500px) {
+    header {
+        width: 90%;
+    }
+}
+
 header nav {
-  width: 691px;
+  width: 90%;
   vertical-align: top;
   margin-top: 35px;
+}
+
+@media (max-width: 500px) {
+    header nav {
+        width: 90%;
+        margin-top: 35px;
+    }
 }
 
 header nav a {
@@ -90,6 +108,13 @@ header nav a {
   font-size: 14px;
   color: gray;
   text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    header nav a {
+        margin-right: 10px;
+        justify-content: space-between;
+    }
 }
 
 header nav a:hover {
