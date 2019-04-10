@@ -90,8 +90,7 @@ p {
   margin: auto;
   
   @media (max-width: 500px) {
-    width: 90%;
-    border: 1px solid blue;
+    width: 100%;
   }
 }
 
@@ -103,10 +102,13 @@ header {
   display: flex;
   font-size: 1.6rem;
 
-  @media (max-width: 500px) {
-    flex-wrap: nowrap;
-    border: 2px solid mediumvioletred;
-}
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+
+    @media (max-width: 500px) {
+      justify-content: center;
+    }
+  }
 }
 /*
 
